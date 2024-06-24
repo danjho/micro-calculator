@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 class CalculatorPage extends StatefulWidget {
   const CalculatorPage({super.key});
 
+  static const valueKey = Key('value');
+  static const number1Key = Key('number1');
+  static const number2Key = Key('number2');
+
   @override
   State<CalculatorPage> createState() => _CalculatorPageState();
 }
@@ -28,11 +32,13 @@ class _CalculatorPageState extends State<CalculatorPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
+                  key: CalculatorPage.valueKey,
                   value,
                   style: Theme.of(context).textTheme.displayLarge,
                 ),
                 const SizedBox(height: 64),
                 TextField(
+                  key: CalculatorPage.number1Key,
                   decoration: inputDecoration('First Number'),
                   keyboardType: TextInputType.number,
                   onChanged: (value) {
@@ -42,6 +48,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                 ),
                 const SizedBox(height: 16),
                 TextField(
+                  key: CalculatorPage.number2Key,
                   decoration: inputDecoration('Second Number'),
                   keyboardType: TextInputType.number,
                   onChanged: (value) {
