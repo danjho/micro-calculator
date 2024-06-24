@@ -1,0 +1,23 @@
+name: micro_calculator
+description: "A new Flutter package project."
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  lib_dependencies:
+    path: ../lib_dependencies
+  lib_core:
+    path: ../lib_core
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
