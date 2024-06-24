@@ -11,9 +11,11 @@ dependencies:
   flutter:
     sdk: flutter
   lib_dependencies:
-    path: ../lib_dependencies
+    git:
+      url: https://github.com/danjho/lib-dependencies.git
   lib_core:
-    path: ../lib_core
+    git:
+      url: https://github.com/danjho/lib-core.git
 
 dev_dependencies:
   flutter_test:
